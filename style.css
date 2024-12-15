@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    color: #333;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #444;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin: 20px;
+    color: silver;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.word {
+    display: flex;
+    gap: 1px;
+}
+
+.letter {
+    display: inline-block;
+    padding: 2px 1px;
+    border-radius: 4px;
+}
+
+.correct {
+    color: green;
+    background-color: #e6ffe6;
+}
+
+.incorrect {
+    color: red;
+    background-color: #ffe6e6;
+}
+
+.incorrectExtra {
+    color: blueatmosphere;
+    background-color: #ffffe6;
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 2rem;
+    background-color: black;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#textInputBox {
+    font-size: 1.6rem;
+    padding: 10px;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#textInputBox:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+#wpmDiv {
+    display: none;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: green;
+}
